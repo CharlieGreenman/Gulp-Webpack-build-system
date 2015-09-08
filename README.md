@@ -1,4 +1,7 @@
-# A very opinionated Gulp front end infrastructure
+# A totally Awesome Web Pack build in progress
+taking from https://github.com/CharlieGreenman/Gulp-with-foundation-and-sass
+and porting over as much as I can to Webpack as I can see it being a complete
+time saver moving forward.
 
 ##two separate builds##
 There is a default build for development
