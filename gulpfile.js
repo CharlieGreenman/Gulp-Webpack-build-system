@@ -4,7 +4,6 @@ var sass         = require('gulp-sass');
 var jade         = require('gulp-jade');
 var wiredep      = require('wiredep').stream;
 var eslint       = require('gulp-eslint');
-var babel        = require('gulp-babel');
 var plumber      = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin     = require('gulp-imagemin');
