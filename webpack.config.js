@@ -1,14 +1,13 @@
 module.exports = {
-  entry: ["./app/js/index.js", "file?name=index.html!jade-html!./app/jade/index.jade"],
+  entry: ["./app/js/index.js"],
   output: {
-
         path: "./dist/js",
         filename: "bundle.js"
     },
   module: {
     loaders: [
       {test: /\.scss$/, loader: 'style!css!sass'},
-      {test: /\.jade$/,  loader: 'jade-html-loader'},
+      {test: /\.jade$/,  loader: 'jade-loader'},
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
       {test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/},
       //image min loader
@@ -23,6 +22,6 @@ module.exports = {
     ]
   },
   resolve: {
-      extensions: ['', '.js', '.jade', 'scss']
+      extensions: ['', '.js', '.jade', '.scss']
    }
 };

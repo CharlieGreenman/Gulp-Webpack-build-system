@@ -1,3 +1,6 @@
+var jade = require("../jade/index.jade");
+
+
 document.addEventListener("DOMContentloaded", domloaded, false);
 
 
